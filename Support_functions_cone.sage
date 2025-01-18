@@ -132,7 +132,7 @@ def Batyrev_cone(P):
 
     return (Polyhedron(ieqs=ineqs, eqns = equations_translation),rays)
 
-def Support_function_cone(P,wall_crossings=True, batyrev=True):
+def Support_functions_cone(P,wall_crossings=True, batyrev=True):
     if type(wall_crossings)!= bool:
         raise TypeError('wall_crossings must be a Boolean')
     if type(batyrev)!= bool:
